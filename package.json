@@ -1,0 +1,23 @@
+{
+  "name": "pg6301_mongodb",
+  "version": "1.0.0",
+  "description": "* [ ] React and Express app\r   * [ ] npm init -y && npm install \r * [ ] Deploy on Azure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kristiania-EDU/pg6301_mongodb.git"
+  },
+  "keywords": [],
+  "author": "Sebastian Nordby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kristiania-EDU/pg6301_mongodb/issues"
+  },
+  "homepage": "https://github.com/Kristiania-EDU/pg6301_mongodb#readme",
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  }
+}

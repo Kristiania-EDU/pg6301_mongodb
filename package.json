@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently npm:dev:client && npm:dev:server",
+    "dev": "nodemon server.js",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run server"
   },
@@ -21,6 +21,16 @@
   },
   "homepage": "https://github.com/Kristiania-EDU/pg6301_mongodb#readme",
   "devDependencies": {
-    "concurrently": "^7.5.0"
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2"
   }
 }

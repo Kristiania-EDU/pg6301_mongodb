@@ -5,6 +5,6 @@
 
 Express project serves static files that is compiled React code.
 
-[X] Simple React app
-[X] Client fetches data from server(backend)
+[x] Simple React app
+[x] Client fetches data from server(backend)
 [ ] Server uses MongoDB to store data

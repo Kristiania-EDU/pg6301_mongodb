@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "build": "npm run build:server && npn run build:client",
+    "build": "npm run build:server && npm run build:client",
     "build:client": "cd client && npm run build",
     "build:server": "cd server && npm run build",
     "dev": "concurrently 'npm:dev:client' 'npm:dev:server'",

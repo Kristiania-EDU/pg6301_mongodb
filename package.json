@@ -2,12 +2,14 @@
   "name": "pg6301_mongodb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "dev": "nodemon server.js",
+    "build": "npm run build:server && npn run build:client",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "dev": "concurrently 'npm:dev:client' 'npm:dev:server'",
     "dev:client": "cd client && npm run dev",
-    "dev:server": "cd server && npm run server",
+    "dev:server": "cd server && npm run dev",
     "start": "cd server && npm start"
   },
   "repository": {

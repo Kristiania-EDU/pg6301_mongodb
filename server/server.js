@@ -9,7 +9,7 @@ dotenv.config();
 
 const app = express();
 
-const mongoClient = new MongoClient(process.env.MONGODB_URL);
+const mongoClient = new MongoClient(process.env.MONGODB_URI);
 
 mongoClient.connect().then(async res => {
    console.log('Connected do mongodb');

@@ -8,6 +8,7 @@ export function TodoAPI(mongoDatabase) {
     router.get("/", async (req, res) => {
         const todoItems = await mongoDatabase.collection(TODO_COLLECTION)
             .find()
+            .map(({ title, description }) => ({title, description}))
             .toArray();
 
         res.json(todoItems);

@@ -8,3 +8,6 @@ Express project serves static files that is compiled React code.
 [x] Simple React app
 [x] Client fetches data from server(backend)
 [ ] Server uses MongoDB to store data
+
+Useful links:
+https://learn.microsoft.com/en-us/azure/app-service/tutorial-nodejs-mongodb-app

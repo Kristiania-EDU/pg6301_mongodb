@@ -1,27 +1,19 @@
 import {Router} from "express";
 
 
-export function TodoAPI() {
+export function TodoAPI(mongoDatabase) {
     const router = new Router();
 
-    const TODO_ITEMS = [
-        {
-            id: 1,
-            title: "Vaske opp",
-            description: "Du må vaske opp leiligheten"
-        },
-        {
-            id: 2,
-            title: "Handle",
-            description: "Du må på butikken"
-        }
-    ];
+    router.get("/", async (req, res) => {
+        const todoItems = await mongoDatabase.collection('todo')
+            .find()
+            .toArray();
 
-    router.get("/", (req, res) => {
-        res.json(TODO_ITEMS);
+        res.json(todoItems);
     });
 
-    router.post("/", (req, res) => {
+    router.post("/", async (req, res) => {
+
         res.sendStatus(500);
     });
 

@@ -15,7 +15,7 @@ mongoClient.connect().then(async res => {
    console.log('Connected do mongodb');
    const databases = await mongoClient.db().admin().listDatabases();
 
-   app.use("/api/todo", TodoAPI(mongoClient.db("pg6103")));
+   app.use("/api/todo", TodoAPI(mongoClient.db(process.env.MONGODB_DATABASE || "pg6103")));
 });
 
 app.use(express.static("../client/dist"));

@@ -49,7 +49,7 @@ jobs:
         npm run test --if-present
 
     - name: zip project
-      run: |
+      run: 
         zip node-app.zip
 
     - name: Upload artifact for deployment job
